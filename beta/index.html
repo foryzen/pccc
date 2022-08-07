@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head  prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5445596175125441"
+     crossorigin="anonymous"></script>
+
+    <meta property="og:url" content="https://foryzen.github.io/pccc/beta/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="自作PC構成クリエイター beta v4" />
+    <meta property="og:description" content="このサイトはベータ版です。すべての質問に答えると自動的に自作PCの構成が出力されます。" />
+    <meta property="og:site_name" content="foryzen.com" />
+    <meta property="og:image" content="https://foryzen.github.io/main-icon.png" />
+
+    <script src="https://foryzen.com/jquery.js"></script>
+    <script src="parts.js"></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>自作PC構成クリエイター</title>
+    <script src="webhook.js"></script>
+</head>
+
+<body>
+    <div class="header-div">
+        <a href="https://foryzen.github.io/main/" class="header-a"><h1 class="header-h1 header-h1-01">Foryze Nel</h1></a>
+        <a href="https://foryzen.github.io/valorant/" class="header-a"><h1 class="header-h1 header-h1-02">VALORANT</h1></a>
+        <a href="https://foryzen.github.io/xiaomi/" class="header-a"><h1 class="header-h1 header-h1-02">XIAOMI</h1></a>
+        <a href="https://foryzen.github.io/sites/" class="header-a"><h1 class="header-h1 header-h1-02">SITES</h1></a>
+        <a href="https://foryzen.github.io/pccc/beta/" class="header-a"><h1 class="header-h1 header-h1-02">PC</h1></a>
+    </div>
+
+    <img src="img/top-img.png" class="img-01">
+
+    <div class="div-09">
+        <h1 class="h1-04">このサイトは、もう既に自作PCを組んだことがある中・上級者向けのサイトです</h1>
+        <h1 class="h1-04">このサイトを参考に自作PCを組むのはオススメしません</h1>
+        <h1 class="h1-04">概要：各PCパーツを指定すると、商品リンクや合計価格が出力されます</h1>
+        <h1 class="h1-04">説明：6つの選択肢を用意したのですべて選択し、サイト下部の決定ボタンを押してください</h1>
+    </div><br>
+
+    <div class="bd01">
+
+        <div class="div-01">
+            <h2 class="h2-01">1/6</h2>
+            <div class="div-03">
+                <img src="img/money_10000.png" class="money-img zoom">
+                <h1 class="h1-01">予算.Budget</h1>
+            </div><br>
+
+            <div class="cd01a">
+                <div class="cd03a">
+                    <select id="selectBudget" onchange="clickBudget()">
+                        <option value="">選択してください</opsion>
+                        <option value="8~9万円">8~9万円</option>
+                        <option value="10~13万円">10~13万円</option>
+                        <option value="14~16万円">14~16万円</option>
+                        <option value="無制限">無制限</option>
+                    </select>
+                </div><br>
+                <div class="div-02">
+                    <div class="flex-div">
+                        <h4 class="h4-01">選択中: </h4>
+                        <h4 class="h4-01 c401a" id="budget-js-box"></h4>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="div-01">
+            <h2 class="h2-01">2/6</h2>
+            <div class="div-03">
+                <img src="img/computer_case.png" class="case-img zoom">
+                <h1 class="h1-01">サイズ.Size</h1>
+            </div><br>
+
+            <div class="cd01a">
+                <div class="cd03a">
+                    <select id="selectSize" onchange="clickSize()">
+                        <option value="">選択してください</opsion>
+                        <option value="ATX">ATX (大)</option>
+                        <option value="Micro-ATX">Micro-ATX (中)</option>
+                        <option value="Mini-ITX">Mini-ITX (小)</option>
+                    </select>
+                </div><br>
+
+                <div class="div-02">
+                    <div class="flex-div">
+                        <h4 class="h4-01">選択中: </h4>
+                        <h4 class="h4-01 c401a" id="size-js-box"></h4>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="div-01">
+            <h2 class="h2-01">3/6</h2>
+            <div class="div-03">
+                <img src="img/computer_cpu.png" class="zoom">
+                <h1 class="h1-01">CPU</h1>
+            </div><br>
+
+            <div class="cd01a">
+                <div class="cd03a">
+                    <select id="selectCpu" onchange="clickCpu()">
+                        <option value="">選択してください</option>
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+                </div><br>
+
+                <div class="div-02">
+                    <div class="flex-div">
+                        <h4 class="h4-01">選択中: </h4>
+                        <h4 class="h4-01 c401a" id="cpu-js-box"></h4>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="div-01">
+            <h2 class="h2-01">4/6</h2>
+            <div class="div-03">
+                <img src="img/computer_graphic_card.png" class="zoom">
+                <h1 class="h1-01">GPU</h1>
+            </div><br>
+
+            <div class="cd01a">
+                <div class="cd03a">
+                    <select id="selectGpu" onchange="clickGpu()">
+                        <option value="">選択してください</option>
+                        <option value="NVIDIA GeForce">NVIDIA GeForce</option>
+                        <option value="AMD Radeon">AMD Radeon</option>
+                    </select>
+                </div><br>
+
+                <div class="div-02">
+                    <div class="flex-div">
+                        <h4 class="h4-01">選択中: </h4>
+                        <h4 class="h4-01 c401a" id="gpu-js-box"></h4>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="div-01">
+            <h2 class="h2-01">5/6</h2>
+            <div class="div-03">
+                <img src="img/computer_memory.png" class="zoom">
+                <h1 class="h1-01">RAM</h1>
+            </div><br>
+
+            <div class="cd01a">
+                <div class="cd03a">
+                    <select id="selectRam" onchange="clickRam()">
+                        <option value="">選択してください</option>
+                        <option value="8GB">8GB</option>
+                        <option value="16GB">16GB</option>
+                        <option value="32GB">32GB</option>
+                    </select>
+                </div><br>
+
+                <div class="div-02">
+                    <div class="flex-div">
+                        <h4 class="h4-01">選択中: </h4>
+                        <h4 class="h4-01 c401a" id="ram-js-box"></h4>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="div-01">
+            <h2 class="h2-01">6/6</h2>
+            <div class="div-03">
+                <img src="img/computer_harddisk.png" class="zoom">
+                <h1 class="h1-01">ROM</h1>
+            </div><br>
+
+            <div class="cd01a">
+                <div class="cd03a">
+                    <select id="selectRom" onchange="clickRom()">
+                        <option value="">選択してください</option>
+                        <option value="256GB">256GB</option>
+                        <option value="512GB">512GB</option>
+                        <option value="1TB">1TB(1024GB)</option>
+                    </select>
+                </div><br>
+
+                <div class="div-02">
+                    <div class="flex-div">
+                        <h4 class="h4-01">選択中: </h4>
+                        <h4 class="h4-01 c401a" id="rom-js-box"></h4>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="ads">
+            <!-- 800x300 -->
+            <ins class="adsbygoogle"style="display:inline-block;width:800px;height:300px"data-ad-client="ca-pub-5445596175125441"data-ad-slot="3912575026"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script><br>
+        </div>
+
+        <div class="div-04">
+            <button onclick="clickAll()" class="btn-01">決定</button>
+
+            <div>
+                <h1 class="h1-02" id="output-error-1"></h1>
+                <h1 class="h1-02" id="output-error-2"></h1>
+                <h1 class="h1-02" id="output-error-3"></h1>
+                <h1 class="h1-02" id="output-error-4"></h1>
+                <h1 class="h1-02" id="output-error-5"></h1>
+                <h1 class="h1-02 h1-03" id="output-error-6"></h1>
+            </div>
+
+            <div class="div-06">
+                
+                <div class="div-05">
+                    <div class="div-08">
+                        <h2 class="h2-02 a-h2" id="output-cpu"></h2>
+                        <h2 class="h2-02 a-h2" id="output-gpu"></h2>
+                        <h2 class="h2-02 a-h2" id="output-mb"></h2>
+                        <h2 class="h2-02 a-h2" id="output-ram"></h2>
+                        <h2 class="h2-02 a-h2" id="output-rom"></h2>
+                        <h2 class="h2-02 a-h2" id="output-case"></h2>
+                        <h2 class="h2-02 a-h2" id="output-psu"></h2>
+                        <h2 class="h2-02 a-h2" id="output-fan"></h2>
+                        <br>
+                        <h2 class="h2-02 a-h2" id="output-h2"></h2>
+                    </div>
+
+                    <div>
+                        <h2 class="h2-03 a-h2" id="output-colon-1"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-2"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-3"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-4"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-5"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-6"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-7"></h2>
+                        <h2 class="h2-03 a-h2" id="output-colon-8"></h2>
+                        <br>
+                        <h2 class="h2-03 a-h2" id="output-colon-9"></h2>
+                    </div>
+    
+                    <div class="div-07">
+                        <a href="#" class="a-01 a-h2" id="output-a-1"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-2"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-3"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-4"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-5"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-6"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-7"></a>
+                        <a href="#" class="a-01 a-h2" id="output-a-8"></a>
+                        <br>
+                        <h2 class="h2-02 a-h2" id="output-total"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="footer-div-01">
+        <div class="footer-div-02">
+            <a href="https://foryzen.github.io/main/" class="footer-a-01"><h1 class="footer-h1-01">ホームページ</h1></a>
+            <a href="https://twitter.com/foryzen/" class="footer-a-01"><h1 class="footer-h1-01">Twitter</h1></a>
+            <a href="https://foryzen.github.io/pccc/feedback/" class="footer-a-01"><h1 class="footer-h1-01">フィードバック</h1></a>
+        </div>
+
+        <div class="footer-div-03">
+            <h1 class="footer-h1-02">PC Composition Creator Beta v4 | Released by foryzen | © 2022 Foryze Nel</h1>
+        </div>
+    </div>
+
+    <!--pc composition creator release beta v1 : 2022-05-26 19:30-->
+    <!--pc composition creator release beta v2 : 2022-06-02 13:40-->
+    <!--pc composition creator release beta v3 : 2022-06-28 17:40-->
+    <!--pc composition creator release beta v4 : 2022-07-14 18:00-->
+    
+    <!--pc composition creator release beta v4 Github Pages : 2022-08-7 10:00-->
+
+    <!--pc composition creator v1 : 202--->
+    <!--pc composition creator v2 : 202--->
+    <!--pc composition creator v3 : 202--->
+
+</body>
+</html>

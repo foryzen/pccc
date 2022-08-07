@@ -1,0 +1,271 @@
+body {
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.img-01 {
+    margin: 5em 0 5em 0;
+    box-shadow: 0px 0px 30px 10px lightgray;
+}
+
+.div-01 {
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px 5px lightgray;
+    border-radius: 30px;
+    width: 600px;
+    display: inline-block;
+    text-align: center;
+}
+
+.div-02 {
+    display: inline-block;
+}
+
+.div-03 {
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.div-04 {
+    margin-top: 2em;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 0px 30px 10px lightgray;
+    border-radius: 30px;
+    width: 700px;
+}
+
+.div-05 {
+    display: flex;
+}
+
+.div-06 {
+    display: inline-block;
+    margin: 0 0 0em 0;
+}
+
+.div-07 {
+    text-align: right;
+}
+
+.div-08 {
+    text-align: left;
+}
+
+.div-09 {
+    display: inline-block;
+    margin: 0 0 15em 0;
+}
+
+.div-10{
+    display: flex;
+}
+
+.flex-div {
+    display: flex;
+}
+
+.zoom {
+    zoom: 40%;
+}
+
+.h1-01 {
+    margin: 0 0 20px 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.h1-02 {
+    margin: 5px 0 5px 0;
+    font-size: 25px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.h1-03 {
+    margin: 0 0 1em 0;
+}
+
+.h1-04 {
+    margin: 0;
+    font-size: 30px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.h2-01 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    position: absolute;
+    margin-left: 1em;
+}
+
+.h2-02 {
+    margin: 0;
+}
+
+.h2-03 {
+    margin: 0 1em 0 1em;
+}
+
+.h4-01 {
+    margin: 7px 0 0 0;
+    background: lightgray;
+    border-radius: 15px 0 0 15px;
+    font-size: 20px;
+    padding: 3px 0 3px 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.c401a {
+    width: 148px;
+    border-radius: 0 15px 15px 0;
+    padding-right: 10px;
+}
+
+.cd01a {
+    text-align: right;
+    display: inline-block;
+}
+
+.cd03a {
+    display: inline-block;
+}
+
+select,option {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bolder;
+}
+
+.btn-01 {
+    margin: 3em 0 1em 0;
+}
+
+.h1-02-01 {
+    margin: 5px 0 1em 0;
+}
+
+.a-01 {
+    display: block;
+}
+
+.a-h2 {
+    font-size: 25px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+select {
+    width: 245px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-top: 3px;
+    padding-left: 5px;
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+.bd01 {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1300px){
+    .img-01 {
+        width: 80vw;
+    }
+
+    .h1-04 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .h1-04 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .h1-04 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .h1-04 {
+        font-size: 21px;
+    }
+
+    .header-div {
+        zoom: 90%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .h1-04 {
+        font-size: 18px;
+    }
+
+    .header-div {
+        zoom: 80%;
+    }
+
+    .div-01,.div-04,.footer-div-01,.ads {
+        zoom: 90%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .h1-04 {
+        font-size: 15px;
+    }
+
+    .header-div {
+        zoom: 70%;
+    }
+
+    .div-01,.div-04,.footer-div-01,.ads {
+        zoom: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .h1-04,.footer-h1-01,.footer-h1-02 {
+        font-size: 12px;
+    }
+
+    .header-div {
+        zoom: 60%;
+    }
+
+    .div-01,.div-04,.footer-div-01,.ads {
+        zoom: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .h1-04,.footer-h1-01,.footer-h1-02 {
+        font-size: 10px;
+    }
+
+    .header-div {
+        zoom: 50%;
+    }
+
+    .div-01,.div-04,.footer-div-01,.ads {
+        zoom: 60%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .h1-04,.footer-h1-01,.footer-h1-02 {
+        font-size: 10px;
+    }
+
+    .header-div {
+        zoom: 40%;
+    }
+
+    .div-01,.div-04,.footer-div-01,.ads {
+        zoom: 50%;
+    }
+}

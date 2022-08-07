@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.header-a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-div {
+    border-bottom: 1px lightgray solid;
+    padding: 10px;
+    display: flex;
+}
+
+.header-h1 {
+    font-size: 25px;
+    margin: 0 20px 0 20px;
+}
+
+.header-h1-01 {
+    font-family: 'Noto Sans', sans-serif;
+    white-space: nowrap;
+    font-size: 30px;
+    padding: 5px 20px 5px 20px;
+    font-weight: bolder;
+}
+
+.header-h1-02 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding: 5px 20px 5px 20px;
+    border-radius: 30px;
+    transition-duration: 0s;
+}
+
+.header-h1-02:hover {
+    background-color: lightgray;
+}

@@ -1,0 +1,22 @@
+.div-01 {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+}
+
+.ip {
+    width: 320px;
+    height: 20px;
+}
+
+.ta {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 320px;
+    height: 180px;
+}
+
+.btn-01 {
+    font-size: 20px;
+    width: 90px;
+    height: 40px;
+}
